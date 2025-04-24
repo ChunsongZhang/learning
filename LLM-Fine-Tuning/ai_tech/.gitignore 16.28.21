@@ -1,0 +1,71 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# 虚拟环境
+venv/
+ENV/
+env/
+.env
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# 模型文件（通常很大）
+*.bin
+*.pt
+*.pth
+*.gguf
+*.ggml
+models/
+
+# 数据文件
+*.csv
+*.tsv
+*.jsonl
+data/
+
+# 日志文件
+logs/
+*.log
+
+# IDE相关
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# 编译文件
+build/
+*.o
+*.out
+
+# 特定于llama.cpp的文件
+llama.cpp/build/
+
+# 特定于微调的文件
+llm_fine_tuning/checkpoints/
+
+# 配置文件中的敏感信息
+config.json
+secrets.json
+.env

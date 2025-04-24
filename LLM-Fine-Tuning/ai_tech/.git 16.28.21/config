@@ -1,0 +1,13 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+	ignorecase = true
+	precomposeunicode = true
+[remote "origin"]
+	url = https://github.com/QHPG/ai_tech.git
+	fetch = +refs/heads/feature/llm-fine-tuning:refs/remotes/origin/feature/llm-fine-tuning
+[branch "feature/llm-fine-tuning"]
+	remote = origin
+	merge = refs/heads/feature/llm-fine-tuning
