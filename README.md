@@ -762,10 +762,6 @@ Paged Optimizers | 降低优化器状态开销（用于 GPU VRAM 不够的场景
 
   前缀微调（Prefix-Tuning）是一种轻量级的微调方法，受提示（Prompting）的启发，它引入了可训练的连续前缀向量，作为任务特定的参数。该方法通过在输入序列前添加一组可训练的前缀向量（prefix），模型在生成时可以将其视为“虚拟的”提示，使得预训练语言模型能够在不修改其原有参数的情况下，适应特定任务。这些前缀向量在模型的每一层中都存在，作为额外的上下文信息引导模型生成符合任务需求的输出。
 
-   <p align="center">
-     <img src="Assets/Prefix-Tuning_01_2025-03-21_14-54-25.png" width="700" height="500">
-   </p>
-
 
 ##  Prefix Tuning
   - **前缀注入**：
@@ -1117,15 +1113,11 @@ P-Tuning，该方法将Prompt转换为可以学习的Embedding层，并用MLP+LS
 
     - **设置参数**
 
-    ![LLaMA-Factory_01](../Assets/LLaMA-Factory_01_2025-03-26_14-39-40.png)
 
     - **设置输出并开始**
 
-    ![LLaMA-Factory_02](../Assets/LLaMA-Factory_02_2025-03-26_14-40-41.png)
-
     完成执行后输出模型
 
-    ![LLaMA-Factory_03](../Assets/LLaMA-Factory_03_2025-03-26_14-44-08.png)
 
     **合并模型**
 
@@ -1181,13 +1173,10 @@ P-Tuning，该方法将Prompt转换为可以学习的Embedding层，并用MLP+LS
 
     使用merged模型加载，并进行聊天
 
-    ![LLaMA-Factory_04](../Assets/LLaMA-Factory_04_2025-03-26_14-52-06.png)
-
     **提问**
 
     在数据集中选择一个文件进行提问测试，实际效果还不错，和数据集中的内容相仿。
 
-    ![LLaMA-Factory_05](../Assets/LLaMA-Factory_05_2025-03-26_14-54-17.png)
 
 
 
@@ -1197,7 +1186,6 @@ P-Tuning，该方法将Prompt转换为可以学习的Embedding层，并用MLP+LS
 
     模型量化（Model Quantization）是一种将模型的参数和计算从高精度（通常是 32 位浮点数，FP32）转换为低精度（如 16 位浮点数，FP16，或者 8 位整数，INT8）的过程。
 
-    ![LLaMA-Factory_06](../Assets/LLaMA-Factory_06_2025-03-26_14-55-24.png)
 
     - **执行量化**
 
@@ -1217,10 +1205,6 @@ P-Tuning，该方法将Prompt转换为可以学习的Embedding层，并用MLP+LS
     ```
 
     - **推理验证**
-
-    ![LLaMA-Factory_07](../Assets/LLaMA-Factory_07_2025-03-26_14-58-12.png)
-
-    <br>
 
 3. **Unsloth**
 
@@ -1257,7 +1241,6 @@ P-Tuning，该方法将Prompt转换为可以学习的Embedding层，并用MLP+LS
 
       **BERTScore** 是一种基于 **BERT 语义相似度** 计算的文本评估方法，它用于衡量 **生成文本** 与 **参考文本** 之间的语义相似性。相比于传统的 **BLEU、ROUGE**，BERTScore **不依赖 n-gram 词匹配**，而是 **基于上下文的深度语义表示**，可以更准确地评估 NLP 任务（如机器翻译、摘要生成、文本生成等）的质量。
 
-      ![image-Unsloth-02](../Assets/Unsloth_Eval_2025-03-24_17-14-36.png)
 
 <br>
 
