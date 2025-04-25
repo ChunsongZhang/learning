@@ -219,8 +219,8 @@ logits输出
 
 ## llama.cpp对 llama 的量化：
 
-//
 ### 函数名 | 功能
+
 ggml_quantize_q4_0() | 把 float 权重压缩为 Q4_0 格式
 ggml_quantize_q5_1() | 压缩为 Q5_1 格式
 ggml_quantize_chunk() | 通用入口，支持多种格式的分块量化
@@ -715,7 +715,7 @@ A = U · Σ · Vᵀ
 
 AdaLoRA 就是用 SVD 去掉 A 的某些奇异值，然后用这些奇异值来近似 A。
 
-###adalora 流程
+### adalora 流程
 行数 | 中文解释 | 实际作用
 第1行 | 设置超参数（训练轮次、rank预算、学习率等） | 初始化
 第2-9行 | 开始训练循环 | 整体过程控制
