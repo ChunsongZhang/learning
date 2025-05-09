@@ -1,0 +1,13 @@
+# 忽略所有文件和目录
+*
+.*
+
+# 不忽略 main.dart 文件
+!lib/main.dart
+
+# 不忽略 readme.md 文件
+!readme.md
+
+# 不忽略 .gitignore 文件自身
+!.gitignore
+!lib/
